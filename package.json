@@ -1,5 +1,5 @@
 {
-  "name": "matice",
+  "name": "mksmatice",
   "version": "1.1.4",
   "description": "Matice - Use your Laravel translations in JavaScript",
   "main": "dist/matice.js",
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/GENL/matice.git"
+    "url": "https://github.com/minhkashyu/matice.git"
   },
   "keywords": [
     "matice",
@@ -27,9 +27,9 @@
   "author": "Ekcel Ekoumelong",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/GENL/matice/issues"
+    "url": "https://github.com/minhkashyu/matice/issues"
   },
-  "homepage": "https://github.com/GENL/matice#readme",
+  "homepage": "https://github.com/minhkashyu/matice#readme",
   "devDependencies": {
     "@babel/preset-typescript": "^7.10.4",
     "@types/jest": "^26.0.14",
