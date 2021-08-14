@@ -1,3 +1,10 @@
+### Credit the work to the Contributors of [https://github.com/GENL/matice](https://github.com/GENL/matice)
+### The repo is just a fork from it.
+### The repo's main purpose is to ignore all the thrown errors and allow the translation work even if the object keys are not found in the translations file.
+```bash
+throw `Locale [${locale}] does not exist.`
+```
+
 # Use your Laravel translations in JavaScript
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/genl/matice.svg?style=flat-square)](https://packagist.org/packages/genl/matice)
