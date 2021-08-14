@@ -67,11 +67,11 @@ class Localization {
         ' blade directive in your view. Usually insert the directive in app.layout.')
       translations = []
     } else {
-      translations = translations[locale]
+      translations = translations[locale] || {}
 
-      if (translations === undefined) {
-        throw `Locale [${locale}] does not exist.`
-      }
+      // if (translations === undefined) {
+      //   throw `Locale [${locale}] does not exist.`
+      // }
     }
 
     return translations
@@ -86,8 +86,8 @@ class Localization {
     let sentence = this.findSentence(key, silentNotFoundError, options.locale)
 
     if (options.pluralize) {
-      assert(typeof args.count === 'number',
-        'On pluralization, the argument `count` must be a number and non-null.')
+      // assert(typeof args.count === 'number',
+      //   'On pluralization, the argument `count` must be a number and non-null.')
       sentence = this.pluralize(sentence, args.count)
     }
 
@@ -211,7 +211,9 @@ class Localization {
         if (silentNotFoundError) return key
 
         // If key not found and the silent mode is off, throw error,
-        throw `Translation key not found : "${key}" -> Exactly "${part}" not found`
+        // throw `Translation key not found : "${key}" -> Exactly "${part}" not found`
+
+        return key;
       }
     }
 
